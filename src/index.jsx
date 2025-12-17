@@ -4,10 +4,7 @@ import store from './store.js'
 import { Provider } from 'react-redux'
 
 createRoot(document.getElementById('root')).render(
-  
-    {/* Providing store for full app */}
-    <Provider store={store}>
-      <App />
-    </Provider>
-  
+  <Provider store={store}>
+    <App />
+  </Provider>
 )
