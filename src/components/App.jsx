@@ -8,21 +8,9 @@ function App() {
   return (
     <>
       <h1 data-testid="count">{count}</h1>
-
       <div>
-        <button
-          data-testid="increment-btn"
-          onClick={() => dispatch(increment())}
-        >
-          increment
-        </button>
-
-        <button
-          data-testid="decrement-btn"
-          onClick={() => dispatch(decrement())}
-        >
-          decrement
-        </button>
+        <button onClick={() => dispatch(increment())} data-cy="increment-btn">increment</button>
+        <button onClick={() => dispatch(decrement())} data-cy="decrement-btn">decrement</button>
       </div>
     </>
   )
