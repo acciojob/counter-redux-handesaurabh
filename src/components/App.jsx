@@ -10,8 +10,8 @@ function App() {
     <>
       <h1>{count}</h1>
       <div>
-        <button onClick={() => dispatch(increment())}>increment</button>
-        <button onClick={() => dispatch(decrement())}>decrement</button>
+        <button onClick={() => dispatch(increment())}>Increment</button>
+        <button onClick={() => dispatch(decrement())}>Decrement</button>
       </div>
     </>
   )
