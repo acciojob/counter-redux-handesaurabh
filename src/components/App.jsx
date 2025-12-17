@@ -6,18 +6,11 @@ function App() {
   const dispatch = useDispatch();
 
   return (
-    <>
+    <div>
       <h1>{count}</h1>
-      <div>
-        <span></span>
-        <div>
-          <button onClick={() => dispatch(increment())}>increment</button>
-        </div>
-        <div>
-          <button onClick={() => dispatch(decrement())}>decrement</button>
-        </div>
-      </div>
-    </>
+      <button onClick={() => dispatch(increment())}>increment</button>
+      <button onClick={() => dispatch(decrement())}>decrement</button>
+    </div>
   )
 }
 
