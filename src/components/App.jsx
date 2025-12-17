@@ -10,7 +10,6 @@ function App() {
     <>
       <h1>{count}</h1>
       <div>
-        <span></span>
         <button onClick={() => dispatch(increment())}>increment</button>
         <button onClick={() => dispatch(decrement())}>decrement</button>
       </div>
