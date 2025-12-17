@@ -9,13 +9,13 @@ describe('Counter App', () => {
 
   it('increase count on clicking increment & decrease on clicking decrease', () => {
     // Test increment
-    cy.contains('button', 'increment').first().click()
+    cy.contains('button:visible', 'increment').click()
     cy.get('h1').should('contain.text', '1')
     
     // Test decrement
-    cy.contains('button', 'decrement').first().click()
+    cy.contains('button:visible', 'decrement').click()
     cy.get('h1').should('contain.text', '0')
-    cy.contains('button', 'decrement').first().click()
+    cy.contains('button:visible', 'decrement').click()
     cy.get('h1').should('contain.text', '-1')
   })
 })
