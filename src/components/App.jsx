@@ -9,6 +9,7 @@ function App() {
     <>
       <h1>{count}</h1>
       <div>
+        <span></span>
         <button data-cy="increment-button" onClick={() => dispatch(increment())}>increment</button>
         <button data-cy="decrement-button" onClick={() => dispatch(decrement())}>decrement</button>
       </div>
