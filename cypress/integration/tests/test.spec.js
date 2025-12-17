@@ -9,13 +9,13 @@ describe('Counter App', () => {
 
   it('increase count on clicking increment & decrease on clicking decrease', () => {
     // Test increment
-    cy.get('div > :nth-child(2)').click({ multiple: true })
+    cy.contains('increment').click()
     cy.get('h1').should('contain.text', '1')
     
     // Test decrement
-    cy.get('div > :nth-child(3)').click({ multiple: true })
+    cy.contains('decrement').click()
     cy.get('h1').should('contain.text', '0')
-    cy.get('div > :nth-child(3)').click({ multiple: true })
+    cy.contains('decrement').click()
     cy.get('h1').should('contain.text', '-1')
   })
 })
