@@ -3,6 +3,10 @@ describe('Counter App', () => {
     cy.visit('/')
   })
 
+  it('renders the app and intialises with 0', () => {
+    cy.get('h1').should('contain.text', '0')
+  })
+
   it('displays initial count of 0 in h1 element', () => {
     cy.get('h1').should('contain.text', '0')
   })
